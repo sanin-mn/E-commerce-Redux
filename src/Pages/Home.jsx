@@ -14,7 +14,7 @@ function Home() {
       <Row   className=' mb-5 ms-5'>
         { data?.length>0? data?.map((product,index)=>(
           <Col key={index} className="mb-5" sm={12} md={6} lg={4} xl={3}>
-          <Card className="shadow rounded" style={{ width: '18rem',height:'30rem' }}>
+          <Card className="shadow rounded" style={{ width: '18rem'}}>
             <Card.Img height={'200px'} variant="top" src={product?.thumbnail} />
             <Card.Body>
               <Card.Title>{product?.title}</Card.Title>

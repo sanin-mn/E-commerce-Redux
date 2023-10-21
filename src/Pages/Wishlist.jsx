@@ -18,7 +18,7 @@ function Wishlist() {
           wishlistArray?.length>0?
           wishlistArray?.map((product,index)=>(
             <Col key={index} className="mb-5" sm={12} md={6} lg={4} xl={3}>
-          <Card className="shadow rounded" style={{ width: '18rem',height:'30rem' }}>
+          <Card className="shadow rounded" style={{ width: '18rem'}}>
             <Card.Img height={'200px'} variant="top" src={product?.thumbnail} />
             <Card.Body>
               <Card.Title>{product?.title}</Card.Title>
@@ -33,7 +33,7 @@ function Wishlist() {
             </Card.Body>
           </Card>
           </Col>
-          )): <p className="fw-bolder text-danger fs-1">Your Wishlist is Empty!!!</p>
+          )): <p className="fw-bolder text-danger ">Your Wishlist is Empty!!!</p>
         }
       </Row>
     </div>

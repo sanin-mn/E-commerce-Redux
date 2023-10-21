@@ -50,7 +50,7 @@ function Cart() {
                         <tr key={index}>
                             <td>{index+1}</td>
                             <td> {product.title} </td>
-                            <td> <img width={'100px'} height={'100px'} src={product.thumbnail} alt="" /> </td>
+                            <td> <img width={'50px'} src={product.thumbnail} alt="" /> </td>
                             <td> {product.price} </td>
                             <td> <button className='btn' onClick={()=>dispatch(removeFromCart(product.id))}> <i className="fa-solid fa-trash text-danger fa-2x"></i> </button> </td>
                         </tr>
@@ -70,7 +70,7 @@ function Cart() {
             </div>
           </div>
         </>
-        : <p className="fw-bolder text-danger m-5 fs-1">Your Cart is Empty!!!</p>
+        : <p className="fw-bolder text-danger m-5 ">Your Cart is Empty!!!</p>
       }
     </div>
   )
